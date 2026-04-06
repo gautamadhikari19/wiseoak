@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+/* CSS Variables for color theme */
+:root {
+  --accent: #ff0000;
+  --primary: #000080;
+  --background-light: #f9f9f9;
+  --background-dark: #0f172a;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,4 +20,30 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Public Sans", sans-serif;
+}
+
+/* Custom utility classes for colors */
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-background-light {
+  background-color: var(--background-light);
+}
+
+.bg-background-dark {
+  background-color: var(--background-dark);
 }
